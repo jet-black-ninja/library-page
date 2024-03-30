@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="grid-containter">
+      <div class="header">
+        <h1>My Book Library</h1>
+        <p>
+          This webpage is part of
+          <a href="https://www.theodinproject.com/">The Odin Project</a>.The
+          webpage allows you to add your favorite books. This is an exercise in
+          <strong>Object Constructors </strong>and
+          <strong>Local Storage</strong>. You can also view this on my
+          <a href="https://github.com/jet-black-ninja/library-page"
+            >github repository</a
+          >.
+        </p>
+      </div>
+      <div class="form">
+        <form action="GET">
+          <p>Book</p>
+          <p>Author</p>
+          <p>Status</p>
+          <input type="text" name="title" default="Title of the book" />
+          <input type="test" name="author" default="Name of Author" />
+          <select name="status" id="status">
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+          </select>
+          <br />
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="records">
+        <table>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Status</th>
+          <th></th>
+          <tr>
+            <td>Naruto</td>
+            <td>Masashi Kishimoto</td>
+            <td><button class="status">Read</button></td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+
+          <tr>
+            <td>Berserk</td>
+            <td>Kentaro Miura</td>
+            <td><button class="status">Read</button></td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+          <tr>
+            <td>Jojos' Bizzare Adventure</td>
+            <td>Hirohito Araki</td>
+            <td><button class="status">Read</button></td>
+            <td><button class="delete">Delete</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
