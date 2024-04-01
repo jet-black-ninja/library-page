@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: auto;
+}
+
+body {
+    margin: auto auto;
+    min-height: 100vh;
+    padding: auto;
+    width: 80%;
+    display: grid;
+    font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', 'sans-serif';
+    background-image: url('./wallpaperflare.com_wallpaper.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+
+.grid-containter {
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    margin-top: 15vh;
+    background-color: rgba(197, 118, 13, 0.842);
+    margin-bottom: 10vh;
+    height: auto;
+}
+
+.header {
+    display: grid;
+    margin: 20px;
+    justify-content: center;
+
+}
+
+.header h1 {
+    color: rgb(68, 38, 3);
+    font-size: 50px;
+    margin-bottom: -5px;
+
+}
+
+.header p {
+    color: rgb(24, 55, 83);
+    font-weight: 550;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(92, 13, 43);
+}
+
+a:hover {
+    color: rgb(0, 0, 0);
+}
+
+a:visited {
+    color: rgb(22, 129, 40);
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 7px;
+    width: 80%;
+    justify-self: center;
+}
+
+.form p {
+    font-size: larger;
+    font-weight: 700;
+    justify-self: center;
+    margin-bottom: -10px;
+}
+
+.form input,
+select {
+    background-color: #462200;
+    color: bisque;
+    border-radius: 5px;
+    width: 50%;
+    justify-self: center;
+    font-size: 20px;
+    height: 50px;
+}
+
+.form button {
+    background-color: rgba(138, 78, 9, 0.685);
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    justify-self: center;
+
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+.records {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    gap: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #462200;
+}
+
+.records button {
+    padding: 15px 50px;
+    border-radius: 15px;
+    border-color: white;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.delete {
+    background-color: red;
+    color: rgb(219, 205, 11);
+    border: rgb(165, 50, 5);
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+        0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+td {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 550;
+    color: #3a1f0d;
+}
