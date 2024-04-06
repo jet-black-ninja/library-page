@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Page</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="grid-containter">
@@ -23,25 +23,28 @@
           >.
         </p>
       </div>
-      <div class="form">
+
+      <form action="">
         <p>Book</p>
         <p>Author</p>
         <p>Status</p>
-        <input type="text" name="title" default="Title of the book" />
-        <input type="test" name="author" default="Name of Author" />
-        <select name="status" id="status">
+        <input type="text" name="title" default="Title of the book" id="name" />
+        <input type="test" name="author" default="Name of Author" id="author" />
+        <select name="status" id="status" id="status">
           <option value="read">Read</option>
           <option value="unread">Unread</option>
         </select>
         <br />
-        <button id="submit">Submit</button>
-      </div>
+        <button type="submit" value="submit" class="">Submit</button>
+      </form>
+
       <div class="records">
-        <table>
+        <table id="book-table-body">
           <th>Name</th>
           <th>Author</th>
           <th>Status</th>
           <th></th>
+          <!--
           <tr>
             <td>Naruto</td>
             <td>Masashi Kishimoto</td>
@@ -61,6 +64,7 @@
             <td><button class="status">Read</button></td>
             <td><button class="delete">Delete</button></td>
           </tr>
+          --->
         </table>
       </div>
     </div>

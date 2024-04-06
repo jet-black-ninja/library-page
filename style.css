@@ -8,7 +8,7 @@ body {
     margin: auto auto;
     min-height: 100vh;
     padding: auto;
-    width: 80%;
+    width: 70%;
     display: grid;
     font-family: 'Raleway', 'Roboto', 'Helvetica Neue', 'Segoe UI', 'Arial', 'sans-serif';
     background-image: url('./wallpaperflare.com_wallpaper.jpg');
@@ -59,22 +59,24 @@ a:visited {
     color: rgb(22, 129, 40);
 }
 
-.form {
+form {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 7px;
     width: 80%;
     justify-self: center;
+    justify-content: center;
+
 }
 
-.form p {
+form p {
     font-size: larger;
     font-weight: 700;
     justify-self: center;
     margin-bottom: -10px;
 }
 
-.form input,
+form input,
 select {
     background-color: #462200;
     color: bisque;
@@ -85,7 +87,7 @@ select {
     height: 50px;
 }
 
-.form button {
+form button {
     background-color: rgba(138, 78, 9, 0.685);
     border: none;
     border-radius: 15px;
@@ -128,6 +130,10 @@ button:hover {
 button:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
         0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+th {
+    align-content: start;
 }
 
 td {
